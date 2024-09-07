@@ -16,11 +16,11 @@ This project is a CHIP-8 emulator developed in C, utilizing the SDL2 library. Th
 
 1. **Clone the Repository:**
    ```bash
-   git clone https://github.com/yourusername/chip8-emulator.git
+   git clone https://github.com/ferdin/chip8.git
    
 2. **Navigate to the Project Directory:**
    ```bash
-   cd chip8-emulator
+   cd chip8
 
 3. **Build the Project:**
    - Make sure you have the correct SDL2 libraries installed for your system's architecture.
