@@ -1,16 +1,17 @@
 # Compiler and flags
 CC=gcc
-FLAGS=-g -arch arm64
 
 # Detect OS (Windows or macOS)
 ifeq ($(OS),Windows_NT)
     # Windows (MinGW)
+    FLAGS=-g
     LIBS=-L ./lib -lmingw32 -lSDL2main -lSDL2
     RM=del /f
     OUT=./bin/main.exe
     SDL_INCLUDES=-I ./include
 else
     # macOS (using SDL2 installed via Homebrew)
+    FLAGS=-g -arch arm64
     LIBS=-L/opt/homebrew/Cellar/sdl2/2.30.7/lib -lSDL2
     RM=rm -f
     OUT=./bin/main
